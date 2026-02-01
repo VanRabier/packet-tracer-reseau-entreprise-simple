@@ -52,6 +52,9 @@ no shutdown
       - Passerelle par défaut : 192.168.10.1
       - Serveur DNS : 192.168.30.252
 
+###### *Ref 3: Configuration de DHCP_RH_Server*
+
+
   - Le service DHCP a été activé et un pool d’adresses a été créé :
     - Nom du pool : serverPool
     - Passerelle par défaut : 192.168.10.1
