@@ -75,6 +75,7 @@ Le réseau est composé des éléments suivants :
   - Serveur DNS: 192.168.30.252
 
 ###### *Ref 2: Configuration du serveur DHCP_RH*
+<img width="526" height="510" alt="PackT-Config_DHCP_RH" src="https://github.com/user-attachments/assets/a5a636d0-7da1-4680-b279-1b8a04ee2113" />
 
 - Le service DHCP a été activé et une plage d’adresses a été créée:
   - Nom de la plage: serverPool
@@ -142,7 +143,7 @@ Le réseau est composé des éléments suivants :
 ### Test de connectivité inter-départements
 - Un ping a été effectué depuis le poste client RH_1 (Ressources Humaines) vers le poste M_1 (Marketing) afin de vérifier la communication entre les différents sous-réseaux.
 
-###### *Ref 10: Ping entre RH1 et M1*
+###### *Ref 10: Ping entre RH2 et M2*
 
 #### Serveur Web
 - Un serveur Web nommé SVR_Web a été créé et configuré avec:
@@ -150,7 +151,8 @@ Le réseau est composé des éléments suivants :
 	- Masque de sous-réseau : 255.255.255.0
 	- Passerelle par défaut : 192.168.30.1
 	
-###### *Ref 10: PackT-Config_SVR_Web*
+###### *Ref 11: Configuration du serveur web*
+<img width="527" height="533" alt="PackT-Config_SVR_web" src="https://github.com/user-attachments/assets/40114ee1-8927-4c96-997a-03c05cb07331" />
 
 - Depuis l’onglet Services, section HTTP, les services HTTP et HTTPS ont été activés.
 - Le serveur a ensuite été connecté au switch de la salle serveurs.
@@ -158,21 +160,27 @@ Le réseau est composé des éléments suivants :
 ### Test du serveur Web
 - Depuis le poste client RH_2, le navigateur Web a été ouvert et l’adresse IP du serveur Web (192.168.30.251) a été saisie pour vérifier l’accès au service HTTP.
 
-###### *Ref 11: PackT-Test_SVR_Web*
-	
+###### *Ref 12: Test a l'acces*
+<img width="526" height="510" alt="PackT-Test_SVR_web" src="https://github.com/user-attachments/assets/d804b65a-02d2-4824-9eca-12948242891b" />
+
 #### Serveur DNS 
 - Un serveur DNS nommé SVR_DNS a été créé et configuré avec: 
 	- Adresse IP statique : 192.168.30.252
 	- Masque de sous-réseau : 255.255.255.0
 	- Passerelle par défaut : 192.168.30.1
 	
-###### *Ref 12: PackT-Config_SVR_DNS*
+###### *Ref 13: Configuration du serveur DNS*
+<img width="527" height="533" alt="PackT-Config_SVR_DNS" src="https://github.com/user-attachments/assets/f8c87823-de58-4d2b-9b95-a2fa37a573e0" />
 
 - Depuis l’onglet Services, section DNS, le service DNS a été activé.  Un enregistrement DNS pour le site Web, www.ciscopackettracer.com, a été créé associant le nom de domaine à l’adresse IP du serveur Web.
 	
-###### *Ref 13: PackT-Add_web*
+###### *Ref 14: PackT-Add_web*
+<img width="526" height="510" alt="PackT-Config_Add_Web" src="https://github.com/user-attachments/assets/f6e9425a-ff5e-43df-871f-023b031302e2" />
 
 - Le serveur DNS a ensuite été connecté au switch de la salle serveurs.
 
 ### Test du serveur DNS
 - Depuis le poste client M_2, le navigateur Web a été ouvert et le nom de domaine www.ciscopackettracer.com a été saisi afin de vérifier la résolution DNS.
+
+###### *Ref 15: Test Resolution DNS*
+<img width="526" height="510" alt="PackT-Test_SVR_DNS" src="https://github.com/user-attachments/assets/fc4bffbd-4c33-4b6b-a042-dd6ea321f93d" />
