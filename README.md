@@ -1,4 +1,4 @@
-# Cisco Packet Tracer Lab – Réseau d’Entreprise Simple
+# Lab Cisco Packet Tracer – Réseau d’Entreprise Simple
 
 ## Présentation du projet
 Ce projet a pour objectif de concevoir et configurer un réseau d’entreprise simple à l’aide de Cisco Packet Tracer.  Le réseau est segmenté en plusieurs départements et intègre des services centralisés tels que le DHCP, le DNS et un serveur Web HTTP.
