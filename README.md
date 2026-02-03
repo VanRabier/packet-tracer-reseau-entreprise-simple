@@ -154,15 +154,18 @@ Le réseau est composé des éléments suivants :
 	- Passerelle par défaut : 192.168.30.1
 	
 ###### *Ref 11: Configuration du serveur web*
-<img width="527" height="533" alt="PackT-Config_SVR_web" src="https://github.com/user-attachments/assets/40114ee1-8927-4c96-997a-03c05cb07331" />
+<img width="526" height="510" alt="PackT-ConfigSVRWeb_HTTP" src="https://github.com/user-attachments/assets/d56f5b59-2f5f-4f79-8fd1-d6beb2d2d935" />
 
 - Depuis l’onglet Services, section HTTP, les services HTTP et HTTPS ont été activés.
 - Le serveur a ensuite été connecté au switch de la salle serveurs.
-	
+
+###### *Ref 12: Activation du service HTTP*
+<img width="526" height="510" alt="PackT-SVRWeb_HTTP" src="https://github.com/user-attachments/assets/292cff80-bea9-4b3d-82a6-17cc561ccde7" />
+
 ### Test du serveur Web
 - Depuis le poste client RH_2, le navigateur Web a été ouvert et l’adresse IP du serveur Web (192.168.30.251) a été saisie pour vérifier l’accès au service HTTP.
 
-###### *Ref 12: Vérification de l’accès au serveur Web*
+###### *Ref 13: Vérification de l’accès au serveur Web*
 <img width="526" height="510" alt="PackT-Test_SVR_web" src="https://github.com/user-attachments/assets/d804b65a-02d2-4824-9eca-12948242891b" />
 
 ### Serveur DNS 
@@ -171,12 +174,12 @@ Le réseau est composé des éléments suivants :
 	- Masque de sous-réseau : 255.255.255.0
 	- Passerelle par défaut : 192.168.30.1
 	
-###### *Ref 13: Configuration du serveur DNS*
+###### *Ref 14: Configuration du serveur DNS*
 <img width="527" height="533" alt="PackT-Config_SVR_DNS" src="https://github.com/user-attachments/assets/f8c87823-de58-4d2b-9b95-a2fa37a573e0" />
 
 - Depuis l’onglet Services, section DNS, le service DNS a été activé.  Un enregistrement DNS pour le site Web, www.ciscopackettracer.com, a été créé associant le nom de domaine à l’adresse IP du serveur Web.
 	
-###### *Ref 14: Mise en place du service DNS et association du domaine au serveur Web*
+###### *Ref 15: Mise en place du service DNS et association du domaine au serveur Web*
 <img width="526" height="510" alt="PackT-Config_Add_Web" src="https://github.com/user-attachments/assets/f6e9425a-ff5e-43df-871f-023b031302e2" />
 
 - Le serveur DNS a ensuite été connecté au switch de la salle serveurs.
@@ -184,5 +187,5 @@ Le réseau est composé des éléments suivants :
 ### Test du serveur DNS
 - Depuis le poste client M_2, le navigateur Web a été ouvert et le nom de domaine www.ciscopackettracer.com a été saisi afin de vérifier la résolution DNS.
 
-###### *Ref 15: Test Resolution DNS*
+###### *Ref 16: Test Resolution DNS*
 <img width="526" height="510" alt="PackT-Test_SVR_DNS" src="https://github.com/user-attachments/assets/fc4bffbd-4c33-4b6b-a042-dd6ea321f93d" />
