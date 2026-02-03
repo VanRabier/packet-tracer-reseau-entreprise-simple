@@ -189,3 +189,6 @@ Le réseau est composé des éléments suivants :
 
 ###### *Ref 16: Test Resolution DNS*
 <img width="526" height="510" alt="PackT-Test_SVR_DNS" src="https://github.com/user-attachments/assets/fc4bffbd-4c33-4b6b-a042-dd6ea321f93d" />
+
+## Contenu du dépôt
+- Le fichier Packet Tracer correspondant à ce projet se trouve dans le dossier `PacketTracer`
